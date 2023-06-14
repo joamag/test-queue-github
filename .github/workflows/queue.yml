@@ -1,0 +1,13 @@
+name: Merge Queue
+on:
+  pull_request:
+  merge_group:
+jobs:
+  build:
+    timeout-minutes: 10
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code from repository
+        uses: actions/checkout@v3
+      - name: Run Python tests
+        run: python test.py
