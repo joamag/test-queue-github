@@ -1,0 +1,4 @@
+name: Merge Queue
+on:
+  pull_request:
+  merge_group:
